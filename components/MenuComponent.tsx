@@ -15,6 +15,10 @@ export default function MenuComponent() {
       <Link to='/old-connected'>Old connected</Link>
       {' '}
       <Link to='/new-connected'>New connected</Link>
+      {' '}
+      <Link to='/new-async'>New async</Link>
+      {' '}
+      <Link to='/new-async2'>New async 2</Link>
     </div>
   );
 }

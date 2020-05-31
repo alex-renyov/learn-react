@@ -15,12 +15,14 @@ import Nested from './components/NestedComponent';
 import Callback from './components/CallbackComponent';
 import OldConnectedComponent from './components/OldConnectedComponent';
 import NewConnectedComponent from './components/NewConnectedComponent';
+import NewAsyncComponent from './components/NewAsyncComponent';
+import NewAsync2Component from './components/NewAsync2Component';
 
 const history = createBrowserHistory();
 const store = createStore(history);
 
 render((
-    <React.StrictMode>
+    <React.StrictMode>s
       <Provider store={store}>
         <ConnectedRouter history={history}>
             <Fragment>
@@ -32,6 +34,8 @@ render((
                   <Route exact path="/callback" render={() => (<Callback />)} />
                   <Route exact path="/old-connected" render={() => (<OldConnectedComponent />)} />
                   <Route exact path="/new-connected" render={() => (<NewConnectedComponent />)} />
+                  <Route exact path="/new-async" render={() => (<NewAsyncComponent />)} />
+                  <Route exact path="/new-async2" render={() => (<NewAsync2Component />)} />
                 </Switch>
               </div>
             </Fragment>
