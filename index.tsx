@@ -22,7 +22,7 @@ const history = createBrowserHistory();
 const store = createStore(history);
 
 render((
-    <React.StrictMode>s
+    <React.StrictMode>
       <Provider store={store}>
         <ConnectedRouter history={history}>
             <Fragment>
