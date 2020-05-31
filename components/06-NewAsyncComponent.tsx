@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { asyncLoadAction2 } from '../store';
+import { asyncLoadAction } from '../store/03-simple';
 
 function ViewComponent(props: any) {
   return (
@@ -10,29 +10,29 @@ function ViewComponent(props: any) {
         <div>Loading</div>
       )}
       { props.loaded && (
-        <div>{props.message}</div>
+        <div>I choose {props.name}</div>
       )}
     </Fragment>
   );
 }
 
 function ConnectedComponent() {
-  const state = useSelector((state: any) => state.simpleAsync2);
+  const state = useSelector((state: any) => state.simpleAsync);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(asyncLoadAction2());
+    dispatch(asyncLoadAction());
   }, [])
 
   return (
-    <ViewComponent loading={ state.loading } loaded={ state.loaded } message={ state.message } />
+    <ViewComponent loading={ state.loading } loaded={ state.loaded } name={ state.name } />
   );
 }
 
-export default function NewAsync2Component() {
+export default function NewAsyncComponent() {
   return (
     <Fragment>
-      <div>New async2 component</div>
+      <div>New async component</div>
       <ConnectedComponent />
     </Fragment>
   );

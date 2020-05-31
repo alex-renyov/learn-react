@@ -9,14 +9,14 @@ import './style.css';
 
 import { createStore } from './store';
 
-import Home from './components/HomeComponent';
+import Home from './components/01-HomeComponent';
 import Menu from './components/MenuComponent';
-import Nested from './components/NestedComponent';
-import Callback from './components/CallbackComponent';
-import OldConnectedComponent from './components/OldConnectedComponent';
-import NewConnectedComponent from './components/NewConnectedComponent';
-import NewAsyncComponent from './components/NewAsyncComponent';
-import NewAsync2Component from './components/NewAsync2Component';
+import Nested from './components/02-NestedComponent';
+import Callback from './components/03-CallbackComponent';
+import OldConnectedComponent from './components/04-OldConnectedComponent';
+import NewConnectedComponent from './components/05-NewConnectedComponent';
+import NewAsyncComponent from './components/06-NewAsyncComponent';
+import NewAsync2Component from './components/07-NewAsync2Component';
 
 const history = createBrowserHistory();
 const store = createStore(history);
