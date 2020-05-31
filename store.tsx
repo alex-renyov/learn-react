@@ -1,13 +1,15 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import { routerMiddleware, connectRouter } from 'connected-react-router';
 
-export const store = configureStore({
-  reducer: {}
-});
+export function createStore(history: any) {
+  const router = routerMiddleware(history);
 
-export type RootState = ReturnType<typeof store.getState>;
-export type AppThunk<ReturnType = void> = ThunkAction<
-  ReturnType,
-  RootState,
-  unknown,
-  Action<string>
->;
+  return configureStore({
+    reducer: {
+      router: connectRouter(history)
+    },
+    middleware: [
+      router
+    ]
+  })
+}
