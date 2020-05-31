@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { asyncLoadAction } from '../store/03-async';
+import { asyncLoadAction } from '../store/06-async';
 
 function ViewComponent(props: any) {
   return (

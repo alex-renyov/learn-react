@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { simple2Increment, simple2Decrement } from '../store/02-simple';
+import { simple2Increment, simple2Decrement } from '../store/05-simple';
 
 function ViewComponent(props: any) {
   return (

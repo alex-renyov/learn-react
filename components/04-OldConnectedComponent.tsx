@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { simpleIncrement, simpleDecrement } from '../store/01-simple';
+import { simpleIncrement, simpleDecrement } from '../store/04-simple';
 
 function ViewComponent(props: any) {
   return (
