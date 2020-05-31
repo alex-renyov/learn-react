@@ -30,4 +30,4 @@ export const asyncSlice2 = createSlice({
       state.message = action.payload;
     }
   }
-})
+});

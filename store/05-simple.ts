@@ -5,7 +5,7 @@ export const simple2Slice = createSlice({
   initialState: { count: 0 },
   reducers: {
     increment2: (state, action) => { state.count = state.count + action.payload },
-    decrement2: (state, action) => { state.count = state.count - action.payload },
+    decrement2: (state, action) => { state.count = state.count - action.payload }
   }
 });
 

@@ -6,7 +6,6 @@ import { simple2Slice, simple2Increment, simple2Decrement } from './store/05-sim
 import { simpleAsyncReducer, asyncLoadAction } from './store/06-async';
 import { asyncLoadAction2, asyncSlice2 } from './store/07-async';
 
-
 export function createStore(history: any) {
   const router = routerMiddleware(history);
 

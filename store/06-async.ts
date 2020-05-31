@@ -1,4 +1,4 @@
-export function simpleAsyncReducer (state = { name: null, loading: false, loaded: false }, action: any) {
+export function simpleAsyncReducer (state = { name: null, loading: false, loaded: false }, action: { type: string, payload: string}) {
   switch (action.type) {
     case 'async/start':
       return { ...state, name: null, loading: true, loaded: false};

@@ -1,4 +1,4 @@
-export function simpleReducer(state = { count: 0 }, action: any) {
+export function simpleReducer(state = { count: 0 }, action: { type: string, payload: number }) {
   switch (action.type) {
     case 'increment':
       return { count: state.count + action.payload };
