@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { simple2Increment, simple2Decrement } from '../store/05-simple';
 
-function ViewComponent(props: any) {
+function ViewComponent(props: {count: number, increment: (n: number) => void, decrement: (n: number) => void}) {
   return (
     <Fragment>
       <div>You clicked {props.count}</div>

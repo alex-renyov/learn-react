@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { asyncLoadAction } from '../store/06-async';
 
-function ViewComponent(props: any) {
+function ViewComponent(props: {loading: boolean, loaded: boolean, name: string}) {
   return (
     <Fragment>
       { props.loading && (

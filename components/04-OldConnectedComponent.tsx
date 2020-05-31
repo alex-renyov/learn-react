@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 
 import { simpleIncrement, simpleDecrement } from '../store/04-simple';
 
-function ViewComponent(props: any) {
+function ViewComponent(props: {count: number, increment: (n: number) => void, decrement: (n: number) => void}) {
   return (
     <Fragment>
       <div>You clicked {props.count}</div>
