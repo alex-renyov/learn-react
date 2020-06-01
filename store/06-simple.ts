@@ -1,13 +1,18 @@
-import { createSlice } from '@reduxjs/toolkit';
-
-export const simple2Slice = createSlice({
-  name: 'simple2',
-  initialState: { count: 0 },
-  reducers: {
-    increment2: (state, action) => { state.count = state.count + action.payload },
-    decrement2: (state, action) => { state.count = state.count - action.payload }
+export function simpleReducer(state = { count: 0 }, action: { type: string, payload: number }) {
+  switch (action.type) {
+    case 'increment':
+      return { count: state.count + action.payload };
+    case 'decrement':
+      return { count: state.count - action.payload };
+    default:
+      return state;
   }
-});
+}
 
-export const simple2Increment = simple2Slice.actions.increment2;
-export const simple2Decrement = simple2Slice.actions.decrement2;
+export function simpleIncrement(count: number) {
+  return { type: 'increment', payload: count };
+}
+
+export function simpleDecrement(count: number) {
+  return { type: 'decrement', payload: count };
+}

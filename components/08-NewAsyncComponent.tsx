@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { asyncLoadAction } from '../store/07-async';
+import { asyncLoadAction } from '../store/08-async';
 
 function ViewComponent(props: { loading: boolean, loaded: boolean, name: string }) {
   return (

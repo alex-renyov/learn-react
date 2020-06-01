@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { simple2Increment, simple2Decrement } from '../store/06-simple';
+import { simple2Increment, simple2Decrement } from '../store/07-simple';
 
 function ViewComponent(props: {count: number, increment: (n: number) => void, decrement: (n: number) => void}) {
   return (

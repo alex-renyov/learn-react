@@ -14,10 +14,11 @@ import Menu from './components/MenuComponent';
 import Nested from './components/02-NestedComponent';
 import Callback from './components/03-CallbackComponent';
 import Form from './components/04-FormComponent';
-import OldConnected from './components/05-OldConnectedComponent';
-import NewConnected from './components/06-NewConnectedComponent';
-import NewAsync from './components/07-NewAsyncComponent';
-import NewAsync2 from './components/08-NewAsync2Component';
+import HighOrder from './components/05-HighOrderComponent';
+import OldConnected from './components/06-OldConnectedComponent';
+import NewConnected from './components/07-NewConnectedComponent';
+import NewAsync from './components/08-NewAsyncComponent';
+import NewAsync2 from './components/09-NewAsync2Component';
 
 const history = createBrowserHistory();
 const store = createStore(history);
@@ -34,6 +35,7 @@ render((
                   <Route exact path="/nested" render={() => (<Nested />)} />
                   <Route exact path="/callback" render={() => (<Callback />)} />
                   <Route exact path="/form" render={() => (<Form />)} />
+                  <Route exact path="/high-order" render={() => (<HighOrder />)} />
                   <Route exact path="/old-connected" render={() => (<OldConnected />)} />
                   <Route exact path="/new-connected" render={() => (<NewConnected />)} />
                   <Route exact path="/new-async" render={() => (<NewAsync />)} />

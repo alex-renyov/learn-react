@@ -14,6 +14,8 @@ export default function MenuComponent() {
       {' '}
       <Link to='/form'>Form</Link>
       {' '}
+      <Link to='/high-order'>High order</Link>
+      {' '}
       <Link to='/old-connected'>Old connected</Link>
       {' '}
       <Link to='/new-connected'>New connected</Link>
