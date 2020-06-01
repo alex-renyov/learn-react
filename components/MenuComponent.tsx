@@ -12,6 +12,8 @@ export default function MenuComponent() {
       {' '}
       <Link to='/callback'>Callback</Link>
       {' '}
+      <Link to='/form'>Form</Link>
+      {' '}
       <Link to='/old-connected'>Old connected</Link>
       {' '}
       <Link to='/new-connected'>New connected</Link>
