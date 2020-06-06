@@ -23,6 +23,8 @@ export default function MenuComponent() {
       <Link to='/new-async'>New async</Link>
       {' '}
       <Link to='/new-async2'>New async 2</Link>
+      {' '}
+      <Link to='/styled'>New async 2</Link>
     </div>
   );
 }

@@ -19,6 +19,7 @@ import OldConnected from './components/06-OldConnectedComponent';
 import NewConnected from './components/07-NewConnectedComponent';
 import NewAsync from './components/08-NewAsyncComponent';
 import NewAsync2 from './components/09-NewAsync2Component';
+import Styled from './components/10-StyledComponent';
 
 const history = createBrowserHistory();
 const store = createStore(history);
@@ -40,6 +41,7 @@ render((
                   <Route exact path="/new-connected" render={() => (<NewConnected />)} />
                   <Route exact path="/new-async" render={() => (<NewAsync />)} />
                   <Route exact path="/new-async2" render={() => (<NewAsync2 />)} />
+                  <Route exact path="/styled" render={() => (<Styled />)} />
                 </Switch>
               </div>
             </Fragment>
