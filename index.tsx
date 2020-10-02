@@ -5,11 +5,13 @@ import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
 import { createBrowserHistory } from 'history';
 
+import 'bootstrap/dist/css/bootstrap.css';
 import './style.css';
 
 import { createStore } from './store';
 
 import Home from './components/01-HomeComponent';
+import RegistrationForm from './components/02-RegistrationFormComponent';
 import Menu from './components/MenuComponent';
 
 const history = createBrowserHistory();
@@ -24,6 +26,7 @@ render((
               <div className="app">
                 <Switch>
                   <Route exact path="/" render={() => (<Home/>)} />
+                  <Route exact path="/registration" render={() => (<RegistrationForm/>)} />
                 </Switch>
               </div>
             </Fragment>

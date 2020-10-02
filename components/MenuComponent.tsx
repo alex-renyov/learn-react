@@ -7,6 +7,8 @@ export default function MenuComponent() {
   return (
     <div className="menu">
       <Link to='/'>Home</Link>
+      {' '}
+      <Link to='/registration'>Registration</Link>
     </div>
   );
 }
